@@ -44,3 +44,5 @@ ed d8 76 8e 4a 42 45 aa c6 dd c6 c1 f7 40 60 00   ..v.JBE......@`.
 
 Error: your password seems wrong
 ```
+
+`-o -1` get a ogg file but its messed up :(
