@@ -34,3 +34,7 @@ flag{please_use_python3}
 
 </p>
 </details>
+
+---
+
+Andrew Steadman

@@ -38,3 +38,7 @@ flag{60_dozen_quartz_jars}
 
 </p>
 </details>
+
+---
+
+Andrew Steadman
