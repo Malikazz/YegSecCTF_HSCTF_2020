@@ -14,7 +14,7 @@ The overlay is 25% transparent, and is colored blue. In places where the overlay
 
 We know the beginning of the message is "flag{", and the last character is "}". We now need to figure out roughly how long the flag is. First, we add characters between "{" and "}" until the pixel density looks right. This doesn't yet tell us the exact length, but gives us a minimum length.
 
-> Note: QR codes can have varying amounts of protection. I've told the encoder to use the lowest protection level, since that will allow us to pack in the data into the message. The protection bits (a reed-solomon code) mostly appear on the left of the image between the two squares and spilling slightly into the middle. Since those parts of the image are missing, it's safe to assume the image was encoded in such a way that those were not important.
+> Note: QR codes can have varying amounts of protection. I've told the encoder to use the lowest protection level, since that will allow us to pack more data into the message. The protection bits (a reed-solomon code) mostly appear on the left of the image between the two squares and spilling slightly into the middle. Since those parts of the image are missing, it's safe to assume the image was encoded in such a way that those were not important.
 
 QR codes can have 1 of 7 different masks applied to them, and the mask chosen will drastically change the "appearance" of the image. Generally, the mask depends on the message, and changing the message even slightly will cause it to choose a different (more optimal mask). Through trial and error I determined that the 4th mask had the best match to the source image and likely was the mask used, so I hardcoded the encoder to **only** use this mask.
 
