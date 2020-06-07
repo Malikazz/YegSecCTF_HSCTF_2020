@@ -2,7 +2,7 @@
 
 We are given a partially obscured QR code. I've opened the image up in an image editor, filled in the partially obscured dots, and added the missing "fixed" patterns (the large squares in the corners, and the two ribbons of alternating dots).
 
-![n-95 image with known missing pieces][N-95-edit.png]
+![n-95 image with known missing pieces](N-95-edit.png)
 
 Unfortunately, this is not enough for most QR decoders. Let's dig deeper.
 
