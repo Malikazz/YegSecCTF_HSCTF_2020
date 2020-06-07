@@ -48,6 +48,9 @@ Then we will get `K1 ^ K2 ^ K3 ^ K4 ^ K5`.
 
 See `script.py`.
 
+<details><summary>Spoiler (Output Includes Flag)</summary>
+<p>
+
 ```
 $ python
 Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)] on win32
@@ -64,6 +67,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> byte_xor(xoredFlag,key)
 b'flag{n0t_t00_h4rD_h0p3fully}'
 ```
+
+</p>
+</details>
 
 ---
 Andrew Steadman
