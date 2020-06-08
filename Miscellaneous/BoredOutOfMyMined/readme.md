@@ -39,7 +39,7 @@ pt 3: 0Tat3?_
 </details>
 Finally, we found the maxCommandChainLength under GameRules in the level.dat file. It's binary, but we had trouble decoding it. It turns out we needed to break up the characters individually and "guess" a few. We are given the string <details>11211652581215153161125</details> and after breaking it up we get <details>112 116 52 58 121 51 53 161 125</details> which decodes to the last part of the flag. 
 <details>
-pt4: pt4:y35¡}
+pt4:y35¡}
 </details>
 
 ## Answer 
