@@ -5,6 +5,7 @@
 We need to log in to a web page. Went to the link in the challenge, attempted to log in with a generic account to see the request. Nothing abnormal. Opted to view the source to see how it works, found that there was javascript for authentication. 
 
 <details><summary>Javascript</summary>
+        
         var login = document.login;
 
         function submit() {
