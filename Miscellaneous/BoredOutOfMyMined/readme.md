@@ -19,6 +19,7 @@ For this challenge we had to use an NBTViewer to view the contents of a minecraf
 <details>
 Note: Found inside log file by searching for "flag"
 [2:16:52] [Server thread/INFO]: <Herobrine> pt 1: flag{d0_5
+  
 [2:16:52] [Server thread/INFO]: <Herobrine> Tell me about myself!
 flag{d0_5
 </details>
@@ -26,12 +27,14 @@ flag{d0_5
 Now that we have the hint for the next part "Tell me about myself!", we should investigate the user files of the person who said this. In this case, we found it under the player file in the recipes area.
 <details>
 minecraft:tell me about the icon!
+  
 minecraft:7@R5_R (pt 2)
 </details>
 
 Since the hint from the last step says "tell me about the icon!", we should look at icon.png. I opened the file but nothing looked out of the ordinary. Next step was to exiftool the file. There was some gibberish in some of the fields, and the description field looked like BASE64, so we opted to decode this and found the next part of the flag.
 <details>
 Finally, tell me about the level - perhaps, the command length?
+  
 pt 3: 0Tat3?_ 
 </details>
 Finally, we found the maxCommandChainLength under GameRules in the level.dat file. It's binary, but we had trouble decoding it. It turns out we needed to break up the characters individually and "guess" a few. We are given the string <details>11211652581215153161125</details> and after breaking it up we get <details>112 116 52 58 121 51 53 161 125</details> which decodes to the last part of the flag. 
