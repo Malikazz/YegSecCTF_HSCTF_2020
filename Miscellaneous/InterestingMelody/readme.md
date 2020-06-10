@@ -1,3 +1,5 @@
+# Interesting Melody
+
 ### legend
 `c = 0, c# = 1, d = 2, d# = 3, e = 4, f = 5, f# = 6, g = 7, g# = 8, a = 9, a# = a, b = b`
 
@@ -71,6 +73,3 @@ flag{y0u_4r3_v3ry_mus1c4l}
 
 </p>
 </details>
-
----
-Andrew Steadman
