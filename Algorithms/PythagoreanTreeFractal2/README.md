@@ -1,0 +1,42 @@
+# Pythagorean Tree Fractal 2
+
+We are given the same pattern of rectangles, and told the area of the square in stage 1 is 70368744177664. The question is, what is the area of the Stage 25 tree.
+
+Well, for stage n, there are `2^n - 1` squares.
+
+Alternatively, you could say that at each stage, there is a summation of rectangles.
+
+For stage n, there are:
+
+![sum_{i=0}^n 2^{i-1}](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAyBAMAAAATs7BgAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH5AYKFgwbn4e/0gAAADBQTFRF////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL92gewAAAA90Uk5TABAiMkRUZnaJmau7zd3vjjpLhQAAAAFiS0dEAIgFHUgAAAGfSURBVBgZ1cGxi9NQAMDhX0yTpl5jHq5XSkcFwU46HGg23a5Oyk0B4XQs6KIcWByUmy6DesSpN7h0qnCDmwX/AHERF7kK4uEgJaKgID6bvNxLhz4Cbvd9ZKztC4+o4JyKzlGlzQZVNnhBlWdM+1R4yW6HY65D6QQE8tvHuZmUMqbgscATuDImY105SCncxB6TsyYQw+ufKLVDCmMQ5G6ncAfasoPSQqkN0FI4C7acoNghObfHfYGSQhN48ItSfXufRtdZDVFS8IEVGaI9ZD082aVNPUmSJ5CCD1izT2hf8Mdel3sUUmgyt/4H7ZCVqRvxpo+SwipznhxQ8idWzOOQ3NXfPa6TefuD0uWQIYv2yJz/K9DewxkW2BEZR4YcaURQ61JyUT6gbSJYpjHkiBPRZ5kttLXNWzFLOO/QZlIOWOJShyrWZyr5EYrdw+QVhRYmjSGK8xWTLXKnbxx8x8CR2gQDL9FCjo01lBZmFjl3R1ApEJjU91ACgcm1fSuZ6xMITKwpSiAwqccogcCkedF6PhqNBgQCE+8uudrOU/7fP+aoc89jUhF7AAAAInRFWHRjb21tZW50AFJlbmRlcmVkIGJ5IFF1aWNrTGFUZVguY29tIEnQtgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMC0wNi0xMFQyMjoxMjoyNyswOTowMKglrsAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjAtMDYtMTBUMjI6MTI6MjcrMDk6MDDZeBZ8AAAAAElFTkSuQmCC)
+
+rectangles.
+
+The first rectangle has an area of `A` (where `A` is 70368744177664).
+
+What is the area of the second two rectangles?
+
+They both are anchored at the corner of the first triangle and touch at exactly half way. We can also tell it's a square. This constrains that inner angle to be 45 degrees. Therefore, this second set of rectangles squares has sides that are 1/sqrt(2) the size of the original square. If that square had an area of A, we would say that these new squares have an area of A/2. In fact, for each level, the area of each new square is 1/2 the area of the previous level's new square.
+
+So, for level 1, there is 1 square of area A.
+
+For level 2, there is 1 square of area A, and 2 squares of area A/2.
+
+For level 3, there is 1 square of area A, 2 squares of area A/2, and 4 squares of area A/4.
+
+![area(n)](data:image/png;base64,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)
+
+<details><summary>Spoiler (Output Includes Flag)</summary>
+<p>
+
+70368744177664*25 = 1759218604441600
+
+```
+flag{1759218604441600}
+```
+
+</p>
+</details>
+
+---
+Andrew Steadman
