@@ -1,5 +1,5 @@
-https://www.andreafortuna.org/2018/04/11/how-to-mount-an-ewf-image-file-e01-on-linux/
-
+This challenege is mostly about working with the EO1 file and the CNC files. 
+The flags are not very 'hidden'
 
 tried binwalking most stuff, tried image stego on imgs not sure need to take a break
 

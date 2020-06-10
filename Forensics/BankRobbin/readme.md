@@ -46,3 +46,5 @@ Error: your password seems wrong
 ```
 
 `-o -1` get a ogg file but its messed up :(
+
+Looks like I may need to repair the ogg file or try something different. 
