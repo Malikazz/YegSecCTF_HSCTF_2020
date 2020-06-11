@@ -24,7 +24,7 @@ So, we have two unsigned long variables: `width` and `height`. We allocate a por
 
 **Why is this exploitable?**
 
-The problem is that the result of the multiplication could overflow, resulting in the allocation a small buffer, but width and height are actually extremely large numbers.
+The problem is that the result of the multiplication could overflow, resulting in the allocation of a small buffer, even when width and height are actually extremely large numbers.
 
 *What numbers should we use?*
 
