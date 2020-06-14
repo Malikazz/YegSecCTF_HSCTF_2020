@@ -104,7 +104,7 @@ Ok, now if we cram them all together into groups of 8 bits?
 01100110 01101100 01100001 01100111 01111011 01110111 01101000 00110100 01110100 00110011 01110110 00110011 01110010 01011111 01101000
 ```
 
-Well, we know from [BinaryWordSearch](../../Miscellaneous/BinaryWordSearch/README.md) that "flag{" starts with the sequence `0110 0110 0110`, so this is looking promising.
+Well, we know from [BinaryWordSearch](../../Miscellaneous/BinaryWordSearch/readme.md) that "flag{" starts with the sequence `0110 0110 0110`, so this is looking promising.
 
 Now, how about that green channel? Once again, it only contains the numbers 0 through 7 - so 3 bits it is.
 
