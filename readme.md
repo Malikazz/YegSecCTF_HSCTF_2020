@@ -15,7 +15,7 @@ using details and summary tags.
 
 [Forensics](Forensics/readme.md)
 
-[Micellaneous](Micellaneous/readme.md)
+[Miscellaneous](Miscellaneous/readme.md)
 
 [ReverseEngineering](ReverseEngineering/readme.md)
 
