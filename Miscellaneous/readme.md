@@ -1,6 +1,6 @@
 # Miscellaneous
 
-## Challeneges
+## Challenges
 
 [BinaryWordSearch](BinaryWordSearch/readme.md)
 
