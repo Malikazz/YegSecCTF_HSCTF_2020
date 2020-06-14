@@ -23,7 +23,3 @@
 [Primes](Primes/readme.md)
 
 [VerySafeLogin](VerySafeLogin/readme.md)
-
-[BinaryWordSearch](BinaryWordSearch/readme.md)
-
-[BinaryWordSearch](BinaryWordSearch/readme.md)
