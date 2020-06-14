@@ -9,7 +9,7 @@ using details and summary tags.
 
 [Algorithms](Algorithms/readme.md)
 
-[BinaryExpmoitation](BinaryExpmoitation/readme.md)
+[BinaryExploitation](BinaryExploitation/readme.md)
 
 [Cryptography](Cryptography/readme.md)
 
