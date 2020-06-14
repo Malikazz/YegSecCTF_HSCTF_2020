@@ -5,5 +5,19 @@ Please make a branch for writeups can join them all together later.
 Each challenge should be in a folder, with a readme.md obscure the flag
 using details and summary tags.
 
-### Resrouces
-https://0xrick.github.io/lists/stego/
+## Categories 
+
+[Algorithms](Algorithms/readme.md)
+
+[BinaryExpmoitation](BinaryExpmoitation/readme.md)
+
+[Cryptography](Cryptography/readme.md)
+
+[Forensics](Forensics/readme.md)
+
+[Micellaneous](Micellaneous/readme.md)
+
+[ReverseEngineering](ReverseEngineering/readme.md)
+
+[WebExploitation](WebExploitation/readme.md)
+
