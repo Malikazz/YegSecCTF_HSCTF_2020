@@ -16,7 +16,7 @@
 
 [InterestingMelody](InterestingMelody/readme.md)
 
-[MyFirstClaculator](MyFirstClaculator/readme.md)
+[MyFirstCalculator](MyFirstCalculator/readme.md)
 
 [N-95](N-95/readme.md)
 
